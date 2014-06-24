@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+extern NSString *const kBaltimorePDArrestDB_URL;
+
 @interface RWTViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

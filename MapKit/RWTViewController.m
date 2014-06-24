@@ -9,6 +9,7 @@
 #import "RWTViewController.h"
 
 static const float METERS_PER_MILE = 1609.344;
+NSString *const kBaltimorePDArrestDB_URL = @"http://data.baltimorecity.gov/resource/3i3v-ibrt.json";
 
 @interface RWTViewController ()
 
