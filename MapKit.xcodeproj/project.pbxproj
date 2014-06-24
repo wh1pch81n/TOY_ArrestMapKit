@@ -22,6 +22,7 @@
 		7F6C65FF1958FB6500E48271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C65DE1958FB6400E48271 /* UIKit.framework */; };
 		7F6C66071958FB6500E48271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F6C66051958FB6500E48271 /* InfoPlist.strings */; };
 		7F6C66091958FB6500E48271 /* MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C66081958FB6500E48271 /* MapKitTests.m */; };
+		7F6C66131958FC8300E48271 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C66121958FC8300E48271 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7F6C66041958FB6500E48271 /* MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		7F6C66061958FB6500E48271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F6C66081958FB6500E48271 /* MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapKitTests.m; sourceTree = "<group>"; };
+		7F6C66121958FC8300E48271 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6C66131958FC8300E48271 /* MapKit.framework in Frameworks */,
 				7F6C65DD1958FB6400E48271 /* CoreGraphics.framework in Frameworks */,
 				7F6C65DF1958FB6400E48271 /* UIKit.framework in Frameworks */,
 				7F6C65DB1958FB6400E48271 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		7F6C65D91958FB6400E48271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F6C66121958FC8300E48271 /* MapKit.framework */,
 				7F6C65DA1958FB6400E48271 /* Foundation.framework */,
 				7F6C65DC1958FB6400E48271 /* CoreGraphics.framework */,
 				7F6C65DE1958FB6400E48271 /* UIKit.framework */,
