@@ -61,6 +61,7 @@ NSString *const kBaltimorePDArrestDB_URL = @"http://data.baltimorecity.gov/resou
     /**creates a url for the web service endpoint to query*/
    // NSURL *url = [NSURL URLWithString:kBaltimorePDArrestDB_URL];
     NSURL *url = [NSURL URLWithString:@"http://data.baltimorecity.gov/api/views/INLINE/rows.json?method=index"];
+    //NSURL *url = [NSURL URLWithString:@"http://data.baltimorecity.gov/resource/3i3v-ibrt.json?method=index"];
     //4
     /**creates a ASIHTTPRequest, and sets it up as a POT, passing in the JSON string as data*/
     ASIHTTPRequest *_request = [ASIHTTPRequest requestWithURL:url];  //wy are we prepending the variable name with an underscore?  its not a provate variable, its a local and temp variable.

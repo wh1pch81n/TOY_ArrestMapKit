@@ -38,6 +38,8 @@
 		7F6C663D19590B2A00E48271 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C663C19590B2A00E48271 /* MobileCoreServices.framework */; };
 		7F6C663F19590B3300E48271 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C663E19590B3300E48271 /* libz.dylib */; };
 		7F6C664119590F2500E48271 /* command.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F6C664019590F2500E48271 /* command.json */; };
+		7F6C66441959E68400E48271 /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C66431959E68400E48271 /* MyLocation.m */; };
+		7F6C66461959EE1D00E48271 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C66451959EE1D00E48271 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,9 @@
 		7F6C663C19590B2A00E48271 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7F6C663E19590B3300E48271 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7F6C664019590F2500E48271 /* command.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = command.json; sourceTree = "<group>"; };
+		7F6C66421959E68400E48271 /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
+		7F6C66431959E68400E48271 /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
+		7F6C66451959EE1D00E48271 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6C66461959EE1D00E48271 /* AddressBook.framework in Frameworks */,
 				7F6C663F19590B3300E48271 /* libz.dylib in Frameworks */,
 				7F6C663D19590B2A00E48271 /* MobileCoreServices.framework in Frameworks */,
 				7F6C663B19590B1E00E48271 /* SystemConfiguration.framework in Frameworks */,
@@ -156,6 +162,7 @@
 		7F6C65D91958FB6400E48271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F6C66451959EE1D00E48271 /* AddressBook.framework */,
 				7F6C663E19590B3300E48271 /* libz.dylib */,
 				7F6C663C19590B2A00E48271 /* MobileCoreServices.framework */,
 				7F6C663A19590B1E00E48271 /* SystemConfiguration.framework */,
@@ -172,6 +179,8 @@
 		7F6C65E01958FB6400E48271 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				7F6C66421959E68400E48271 /* MyLocation.h */,
+				7F6C66431959E68400E48271 /* MyLocation.m */,
 				7F6C65E91958FB6400E48271 /* RWTAppDelegate.h */,
 				7F6C65EA1958FB6400E48271 /* RWTAppDelegate.m */,
 				7F6C65EC1958FB6400E48271 /* Main_iPhone.storyboard */,
@@ -352,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6C66441959E68400E48271 /* MyLocation.m in Sources */,
 				7F6C662A1959098A00E48271 /* ASIDataCompressor.m in Sources */,
 				7F6C65F41958FB6400E48271 /* RWTViewController.m in Sources */,
 				7F6C662E1959098A00E48271 /* ASIHTTPRequest.m in Sources */,
