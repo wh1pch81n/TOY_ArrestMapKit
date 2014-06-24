@@ -37,6 +37,7 @@
 		7F6C663B19590B1E00E48271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C663A19590B1E00E48271 /* SystemConfiguration.framework */; };
 		7F6C663D19590B2A00E48271 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C663C19590B2A00E48271 /* MobileCoreServices.framework */; };
 		7F6C663F19590B3300E48271 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C663E19590B3300E48271 /* libz.dylib */; };
+		7F6C664119590F2500E48271 /* command.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F6C664019590F2500E48271 /* command.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		7F6C663A19590B1E00E48271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7F6C663C19590B2A00E48271 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7F6C663E19590B3300E48271 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7F6C664019590F2500E48271 /* command.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = command.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				7F6C65E31958FB6400E48271 /* InfoPlist.strings */,
 				7F6C65E61958FB6400E48271 /* main.m */,
 				7F6C65E81958FB6400E48271 /* MapKit-Prefix.pch */,
+				7F6C664019590F2500E48271 /* command.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				7F6C65F61958FB6500E48271 /* Images.xcassets in Resources */,
 				7F6C65EE1958FB6400E48271 /* Main_iPhone.storyboard in Resources */,
 				7F6C65E51958FB6400E48271 /* InfoPlist.strings in Resources */,
+				7F6C664119590F2500E48271 /* command.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
