@@ -16,19 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXa-UH-gex">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXa-UH-gex">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Refresh" id="bPa-Zo-Evi"/>
+                                    <barButtonItem title="Refresh" id="bPa-Zo-Evi">
+                                        <connections>
+                                            <action selector="tappedRefresh:" destination="vXZ-lx-hvc" id="xZ4-WF-44Y"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39Z-Wd-ORe">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39Z-Wd-ORe">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39Z-Wd-ORe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="6Ca-la-gEG"/>
+                            <constraint firstAttribute="trailing" secondItem="39Z-Wd-ORe" secondAttribute="trailing" id="HI6-kt-kS1"/>
+                            <constraint firstItem="sXa-UH-gex" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Oji-Pt-EcC"/>
+                            <constraint firstAttribute="trailing" secondItem="sXa-UH-gex" secondAttribute="trailing" id="PZA-7s-5z2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sXa-UH-gex" secondAttribute="bottom" id="Wme-zZ-dWp"/>
+                            <constraint firstItem="sXa-UH-gex" firstAttribute="top" secondItem="39Z-Wd-ORe" secondAttribute="bottom" id="cbM-n5-ad4"/>
+                            <constraint firstItem="39Z-Wd-ORe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="t64-z3-5rM"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="39Z-Wd-ORe" id="Xla-TL-kwL"/>
