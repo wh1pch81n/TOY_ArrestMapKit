@@ -40,6 +40,7 @@
 		7F6C664119590F2500E48271 /* command.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F6C664019590F2500E48271 /* command.json */; };
 		7F6C66441959E68400E48271 /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C66431959E68400E48271 /* MyLocation.m */; };
 		7F6C66461959EE1D00E48271 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C66451959EE1D00E48271 /* AddressBook.framework */; };
+		7F6C66481959FB0B00E48271 /* arrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6C66471959FB0B00E48271 /* arrest.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		7F6C66421959E68400E48271 /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		7F6C66431959E68400E48271 /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		7F6C66451959EE1D00E48271 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7F6C66471959FB0B00E48271 /* arrest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrest.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		7F6C65CE1958FB6400E48271 = {
 			isa = PBXGroup;
 			children = (
+				7F6C66491959FB0F00E48271 /* images */,
 				7F6C6634195909EE00E48271 /* MBProgressHUD */,
 				7F6C66141959094E00E48271 /* ASIHTTPRequest */,
 				7F6C65E01958FB6400E48271 /* MapKit */,
@@ -261,6 +264,14 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		7F6C66491959FB0F00E48271 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7F6C66471959FB0B00E48271 /* arrest.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6C66481959FB0B00E48271 /* arrest.png in Resources */,
 				7F6C65F11958FB6400E48271 /* Main_iPad.storyboard in Resources */,
 				7F6C65F61958FB6500E48271 /* Images.xcassets in Resources */,
 				7F6C65EE1958FB6400E48271 /* Main_iPhone.storyboard in Resources */,

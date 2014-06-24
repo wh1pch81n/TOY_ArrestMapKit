@@ -11,7 +11,7 @@
 
 extern NSString *const kBaltimorePDArrestDB_URL;
 
-@interface RWTViewController : UIViewController
+@interface RWTViewController : UIViewController <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 

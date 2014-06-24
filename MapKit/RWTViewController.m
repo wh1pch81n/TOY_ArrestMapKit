@@ -8,6 +8,7 @@
 
 #import "RWTViewController.h"
 #import "ASIHTTPRequest.h"
+#import "MyLocation.h"
 
 static const float METERS_PER_MILE = 1609.344;
 NSString *const kBaltimorePDArrestDB_URL = @"http://data.baltimorecity.gov/resource/3i3v-ibrt.json";
@@ -77,6 +78,7 @@ NSString *const kBaltimorePDArrestDB_URL = @"http://data.baltimorecity.gov/resou
     [request setCompletionBlock:^{
         NSString *responseString = [request responseString];
         NSLog(@"Response: %@", responseString);
+        [self plotCrimePositions:request.responseData];
     }];
     [request setFailedBlock:^{
         NSError *err = [request error];
@@ -86,6 +88,48 @@ NSString *const kBaltimorePDArrestDB_URL = @"http://data.baltimorecity.gov/resou
     //6
     /**This line is the one that will start the asyncrounous event*/
     [request startAsynchronous];
+}
+
+- (void)plotCrimePositions:(NSData *)responseData {
+    for (id<MKAnnotation> annotation in _mapView.annotations) {
+        [_mapView removeAnnotation:annotation];
+    }
+    
+    NSDictionary *root = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+    NSArray *data = [root objectForKey:@"data"];
+    
+    for (NSArray *row in data) {
+        NSNumber *latitude = row[22][1];
+        NSNumber *longitude = row[22][2];
+        NSString *crimeDescription = row[18];
+        NSString *address = row[14];
+        
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude = latitude.doubleValue;
+        coordinate.longitude = longitude.doubleValue;
+        MyLocation *annotation = [[MyLocation alloc] initWithName:crimeDescription address:address coordinate:coordinate];
+        [_mapView addAnnotation:annotation];
+    }
+}
+
+#pragma mark - MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    static NSString *identifier = @"MyLocation";
+    if ([annotation isKindOfClass:[MyLocation class]]) {
+        MKAnnotationView *annotationView = (MKAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if(annotationView == nil) {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView.enabled = YES;
+            annotationView.canShowCallout = YES;
+            annotationView.image = [UIImage imageNamed:@"arrest.png"]; //here we use a nice image instead of the default pins.
+        }
+        else {
+            annotationView.annotation = annotation;
+        }
+        return annotationView;
+    }
+    return nil;
 }
 
 @end
